@@ -45,3 +45,14 @@ document.addEventListener("keypress", function(e) {
     }
   }
 });
+
+const getBtnNewRound = document.getElementById('newRound');
+getBtnNewRound.addEventListener('click', criaNovaRodada);
+
+function criaNovaRodada() {
+  const rodadas = document.getElementById('linha-rodadas');
+  const createRodadas = document.createElement('th');
+  rodadaCount++;
+  createRodadas.textContent = 'Rodada ' + rodadaCount;
+  rodadas.appendChild(createRodadas).lastChild;
+}

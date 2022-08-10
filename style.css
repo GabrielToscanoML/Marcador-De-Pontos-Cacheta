@@ -36,7 +36,7 @@ th {
   font-size: 15px;
   width: 120px;
   height: 40px;
-  background-color: blue;
+  background-color: rgb(56, 56, 252);
   border-radius: 5px;
   color: white;
   margin-left: 5px;
@@ -49,11 +49,29 @@ input {
   border-radius: 5px;
 }
 
-#adicionando-pessoas {
+ #adicionando-pessoas {
   display: flex;
-  padding: 20px;
   margin-top: 15px;
   height: 30px;
   justify-content: center;
   align-items: center;
+} 
+
+#buttons {
+  padding: 20px;
+  display: flex;
+  margin-top: 15px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+#newRound {
+  margin-top: 15px;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(189, 33, 189);
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
 }
