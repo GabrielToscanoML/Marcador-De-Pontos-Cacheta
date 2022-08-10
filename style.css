@@ -23,9 +23,11 @@ table {
   width: 300px;
   border: 1px solid black;
 }
+
 td, tr {
   border: 1px solid black;
 }
+
 th {
   border: 1px solid red;
   width: 20px;
@@ -65,6 +67,7 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 #newRound {
   margin-top: 15px;
   font-size: 15px;

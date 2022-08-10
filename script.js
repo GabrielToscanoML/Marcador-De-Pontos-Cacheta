@@ -1,7 +1,8 @@
 let rodadaCount = 1;
 let pessoasCount = 0;
-
+const getPessoas = document.getElementsByTagName('tr');
 const getTable = document.getElementById('tabela');
+
 function criaPessoa() {
   const criaNovaPessoa = document.createElement('tr');
   criaNovaPessoa.className = 'Pessoa' + pessoasCount;
@@ -15,6 +16,7 @@ function criaNome(string) {
   criaNome.textContent = string;
   const pessoa = document.querySelector('.Pessoa'+(pessoasCount-1));
   pessoa.appendChild(criaNome);
+  console.log(getPessoas.length);
 }
 
 // ativando o recebimento do input via click
@@ -49,10 +51,26 @@ document.addEventListener("keypress", function(e) {
 const getBtnNewRound = document.getElementById('newRound');
 getBtnNewRound.addEventListener('click', criaNovaRodada);
 
+// function alteraPontos(item) {
+//   const getInputPontos = document.getElementById('inputPontos');
+//   item.value = ;
+// }
+
+function criaPontos() {
+  for(let index = 1; index < getPessoas.length; index++) {
+    const pontos = document.createElement('th');
+    pontos.className = 'pontos';
+    //pontos.textContent = 10;
+   // pontos.addEventListener('click', alteraPontos());
+    document.querySelectorAll('tr')[index].appendChild(pontos).lastChild;
+  }
+ }
+
 function criaNovaRodada() {
   const rodadas = document.getElementById('linha-rodadas');
   const createRodadas = document.createElement('th');
-  rodadaCount++;
   createRodadas.textContent = 'Rodada ' + rodadaCount;
+  rodadaCount++;
   rodadas.appendChild(createRodadas).lastChild;
+  criaPontos();
 }
