@@ -31,3 +31,29 @@ th {
   width: 20px;
   height: 40px;
 }
+
+#addPessoa {
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#adicionando-pessoas {
+  display: flex;
+  padding: 20px;
+  margin-top: 15px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
