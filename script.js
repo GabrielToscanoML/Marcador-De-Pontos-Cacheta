@@ -17,6 +17,7 @@ function criaNome(string) {
   pessoa.appendChild(criaNome);
 }
 
+// ativando o recebimento do input via click
 const btnCriaPessoa = document.getElementById('addPessoa');
 btnCriaPessoa.addEventListener('click', () => {
   const getInputNames = document.querySelector('#inputNames');
@@ -27,5 +28,20 @@ btnCriaPessoa.addEventListener('click', () => {
     criaPessoa();
     criaNome(getInputNames.value);
     getInputNames.value = '';
+  }
+});
+
+// ativando o recebimento do input via teclado
+document.addEventListener("keypress", function(e) {
+  const getInputNames = document.querySelector('#inputNames');
+  if (e.key === "Enter") {
+    if (getInputNames.value == '') {
+      window.alert('Erro! Nome vazio ou inválido!')
+      return;
+    } else {
+      criaPessoa();
+      criaNome(getInputNames.value);
+      getInputNames.value = '';
+    }
   }
 });
