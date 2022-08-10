@@ -1,0 +1,33 @@
+/* @keyframes gradientEffect {
+  from { background-position: 0 0;}
+  to { background-position: 100% 100%;}
+}
+
+body {
+  padding: 100%;
+  background-image: linear-gradient(to bottom right, #4affde 0%,
+  #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);
+
+background-size: 200% 200%;
+animation: gradientEffect 2s linear infinite alternate;
+} */
+
+main {
+  margin-top: 30px;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: 1px solid black;
+}
+td, tr {
+  border: 1px solid black;
+}
+th {
+  border: 1px solid red;
+  width: 20px;
+  height: 40px;
+}
